@@ -1,5 +1,5 @@
 .section01 {
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: var(--grid-template-columns);
     grid-auto-rows: var(--grid-auto-rows);
@@ -107,7 +107,7 @@
 
 @media screen  and (max-width: 560px) {
     .section01 {
-        width: 100vw;
+        width: 100%;
         display: grid;
         grid-template-columns: var(--grid-template-columns-mobile);
         grid-auto-rows: var(--grid-auto-rows-mobile);

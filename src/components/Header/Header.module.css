@@ -1,5 +1,5 @@
 .header {
-    width: 100vw;
+    width: 100%;
     position: fixed;
     display: grid;
     color: var(--color-primary);
@@ -96,7 +96,7 @@
 
 @media screen  and (max-width: 560px) {
     .header {
-        width: 100vw;
+        width: 100%;
         position: fixed;
         grid-template-columns: var(--grid-template-columns-mobile);
         grid-auto-rows: calc(100svh / 12);
