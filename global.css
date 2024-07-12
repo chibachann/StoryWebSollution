@@ -42,7 +42,7 @@
 
 
 body {
-    background-color: var(--color-primary);
+    background-color: black;
     color: var(--color-text);
     font-family: var(--font-family-gothic);
     margin: 0;

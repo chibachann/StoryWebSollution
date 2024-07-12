@@ -102,50 +102,47 @@
 .scroll {
     grid-column: span 1;
     grid-row: 20 / 21;
-    background-color: aqua;
+    
 }
 
 @media screen  and (max-width: 560px) {
     .section01 {
-        height: 100svh;
+        width: 100vw;
         display: grid;
         grid-template-columns: var(--grid-template-columns-mobile);
         grid-auto-rows: var(--grid-auto-rows-mobile);
-        background-color: aqua;
     }
 
     .title {
         grid-column: 1 / 7;
-        grid-row: 3 / 4;
-        position: relative;
-        left: 2vw;
+        grid-row: 4 / 5;
     }
 
     .title h1 {
         font-size: 15vw;
         text-shadow: 2vw 2vw 1vw rgba(0, 0, 0, 0.8);
+        padding-left: 5vw;
     }
 
     .companyName {
         grid-column: 1 / 7;
-        grid-row: 4 / 5;
-        position: relative;
-        left: 2vw;
+        grid-row: 5 / 6;
     }
 
     .companyName h1 {
         font-size: 8vw;
         text-shadow: 2vw 2vw 1vw rgba(0, 0, 0, 0.8);
+        padding-left: 5vw;
     }
 
     .contact {
         grid-column: 1 / 4;
-        grid-row: 5 / 6;
+        grid-row: 6 / 7;
     }
 
     .catalog {
         grid-column: 4 / 7;
-        grid-row: 5 / 6;
+        grid-row: 6 / 7;
     }
         
     .contactButton {

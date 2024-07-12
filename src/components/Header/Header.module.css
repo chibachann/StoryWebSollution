@@ -8,6 +8,7 @@
     opacity: 0;
     animation: fadeDownAnime 1s forwards;
     animation-delay: 2s;
+    z-index: 1;
 }
 
 @keyframes fadeDownAnime {
@@ -95,6 +96,7 @@
 
 @media screen  and (max-width: 560px) {
     .header {
+        width: 100vw;
         position: fixed;
         grid-template-columns: var(--grid-template-columns-mobile);
         grid-auto-rows: calc(100svh / 12);

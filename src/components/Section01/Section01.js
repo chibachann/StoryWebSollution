@@ -12,10 +12,8 @@ const Section01 = () => {
                 <h1>Story Web Solutions</h1>
             </div>
             <div className={styles.backgroundImage}>
-                <picture>
-                    <source srcSet='images/Top.sb.jpg' media="(max-width: 560px)" />
-                    <img src='images/Top.jpg' alt='top' />
-                </picture>
+                
+                
                 
             </div>
             <div className={styles.contact}>
