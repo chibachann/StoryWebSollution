@@ -1,0 +1,68 @@
+:root {
+    /* grid */
+    --grid-template-columns: repeat(12, 1fr);
+    --grid-auto-rows: 5vw;
+
+    --grid-template-columns-mobile: repeat(6, 1fr);
+    --grid-auto-rows-mobile: calc(100svh / 6);
+
+    /* font-family */
+    /* ゴシック体 */
+    --font-family-gothic: "Helvetica Neue", 
+    "Segoe UI", 
+    "Hiragino Kaku Gothic ProN", 
+    "Hiragino Sans", 
+    Meiryo, 
+    sans-serif;
+    /* 明朝体 */
+    --font-family-mincho: "Noto Serif JP", serif;
+    
+    /* color */
+    --color-primary: #FAFAFA;
+    --color-secondary: #4F4AD7;
+    --color-thirdary: #00012A;
+    --color-text: black;
+    --color-text-sub: #9c9c9c;
+    --color-hover-text: gray;
+    --color-box: #7a4171;
+    --color-gradient: linear-gradient(90deg, #ff6200 10%, #FF2525);
+
+    /* font-size */
+    --text-font-size: 1.4vw;
+    --text-font-size-mobile: 3.5vw;
+    --text-font-size-tablet: 2vw;
+
+    --text-line-height: 2.2;
+
+    --link-text-decoration: solid underline;
+    --link-text-underline-offset: 8px;
+    --link-cursor: pointer;
+
+}
+
+
+body {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font-family: var(--font-family-gothic);
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+

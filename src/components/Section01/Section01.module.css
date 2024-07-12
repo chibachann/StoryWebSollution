@@ -1,0 +1,189 @@
+.section01 {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: var(--grid-template-columns);
+    grid-auto-rows: var(--grid-auto-rows);
+    color: var(--color-primary);
+}
+
+.title {
+    grid-column: 2 / 8;
+    grid-row: 4 / 8;
+    display: grid;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 8vw;
+    font-weight: 600;
+    line-height: 1.2;
+    text-shadow: 0.7vw 0.7vw 0.3vw rgba(0, 0, 0, 0.8);
+    animation: fadeUpAnime 1s forwards;
+    opacity: 0;
+}
+
+
+.companyName {
+    grid-column: 2 / 7;
+    grid-row: 8 / 9;
+    display: grid;
+    align-items: center;
+}
+
+.companyName h1 {
+    font-size: 3.5vw;
+    font-weight: 400;
+    text-shadow: 0.5vw 0.5vw 0.3vw rgba(0, 0, 0, 0.8);
+    animation: fadeUpAnime 1s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.backgroundImage {
+    grid-column: 1 / 13;
+    grid-row: 1 / 13;
+}
+
+
+.contact {
+    grid-column: 2 / 4;
+    grid-row: 9 / 11;
+    display: grid;
+    place-items: center;
+    animation: fadeUpAnime 1s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.contactButton {
+    height: 3vw;
+    width: 12vw;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    background: var(--color-gradient);
+    border-radius: 2vw;
+    cursor: pointer;
+}
+
+
+.contactButton a {
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.catalog {
+    grid-column: 4 / 6;
+    grid-row: 9 / 11;
+    display: grid;
+    place-items: center;
+    animation: fadeUpAnime 1s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.catalogButton {
+    height: 3vw;
+    width: 14vw;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    background: var(--color-gradient);
+    border-radius: 2vw;
+    cursor: pointer;
+}
+
+
+.catalogButton a {
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.scroll {
+    grid-column: span 1;
+    grid-row: 20 / 21;
+    background-color: aqua;
+}
+
+@media screen  and (max-width: 560px) {
+    .section01 {
+        height: 100svh;
+        display: grid;
+        grid-template-columns: var(--grid-template-columns-mobile);
+        grid-auto-rows: var(--grid-auto-rows-mobile);
+        background-color: aqua;
+    }
+
+    .title {
+        grid-column: 1 / 7;
+        grid-row: 3 / 4;
+        position: relative;
+        left: 2vw;
+    }
+
+    .title h1 {
+        font-size: 15vw;
+        text-shadow: 2vw 2vw 1vw rgba(0, 0, 0, 0.8);
+    }
+
+    .companyName {
+        grid-column: 1 / 7;
+        grid-row: 4 / 5;
+        position: relative;
+        left: 2vw;
+    }
+
+    .companyName h1 {
+        font-size: 8vw;
+        text-shadow: 2vw 2vw 1vw rgba(0, 0, 0, 0.8);
+    }
+
+    .contact {
+        grid-column: 1 / 4;
+        grid-row: 5 / 6;
+    }
+
+    .catalog {
+        grid-column: 4 / 7;
+        grid-row: 5 / 6;
+    }
+        
+    .contactButton {
+        height: 12vw;
+        width: 36vw;
+        border-radius: 6vw;
+    }
+
+
+    .contactButton a {
+        font-size: 4vw;
+    }
+
+    .catalogButton {
+        height: 12vw;
+        width: 36vw;
+        border-radius: 6vw;
+    }
+
+
+    .catalogButton a {
+        font-size: 4vw;
+    }
+
+    .backgroundImage {
+        grid-column: 1 / 7;
+        grid-row: 1 / 7;
+    }
+    
+}
+
+@keyframes fadeUpAnime {
+    0% {
+        opacity: 0;
+        transform: translateY(2vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
