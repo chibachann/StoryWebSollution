@@ -136,69 +136,115 @@
     .section03 {
         width: 100%;
         display: grid;
+        justify-items: center;
         grid-template-columns: var(--grid-template-columns-mobile);
         grid-auto-rows: var(--grid-auto-rows-mobile);
     }
 
-    .title {
+    .ImageCardArea {
         grid-column: 1 / 7;
-        grid-row: 4 / 5;
+        grid-row: 1 / 5;
+        width: 90%;
+        height: calc(100svh / 3);
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 
-    .title h1 {
-        font-size: 15vw;
-        text-shadow: 2vw 2vw 1vw rgba(0, 0, 0, 0.8);
-        padding-left: 5vw;
+    .ImageCard{
+        width: 45vw;
+        height: calc(100svh / 6);
+        border-radius: 5vw;
     }
 
-    .companyName {
-        grid-column: 1 / 7;
-        grid-row: 5 / 6;
-    }
-
-    .companyName h1 {
-        font-size: 8vw;
-        text-shadow: 2vw 2vw 1vw rgba(0, 0, 0, 0.8);
-        padding-left: 5vw;
-    }
-
-    .contact {
-        grid-column: 1 / 4;
-        grid-row: 6 / 7;
-    }
-
-    .catalog {
-        grid-column: 4 / 7;
-        grid-row: 6 / 7;
-    }
         
-    .contactButton {
-        height: 12vw;
-        width: 36vw;
-        border-radius: 6vw;
+    .ImageCard:nth-child(1) {
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color: blue;
     }
 
-
-    .contactButton a {
-        font-size: 4vw;
+    .ImageCard:nth-child(2) {
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color: royalblue;
+    }
+    .ImageCard:nth-child(3) {
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color: royalblue;
     }
 
-    .catalogButton {
-        height: 12vw;
-        width: 36vw;
-        border-radius: 6vw;
+    .ImageCard:nth-child(4) {
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color: blue;
+        
     }
 
-
-    .catalogButton a {
-        font-size: 4vw;
-    }
-
-    .backgroundImage {
+    .TextArea {
+        width: 90%;
         grid-column: 1 / 7;
-        grid-row: 1 / 7;
+        grid-row: 3 / 7;
+        grid-auto-rows: var(--grid-auto-rows-mobile);
     }
     
+    .SubTitle {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        display: grid;
+        align-items: center;
+    }
+
+    .SubTitle h2 {
+        font-size: 5vw;
+        font-weight: 600;
+    }
+
+    .Title {
+        grid-column: 1 / 7;
+        grid-row: 1 / 3;
+        display: grid;
+        align-items: center;
+    }
+
+    .Title h1 {
+        font-size: 7.5vw;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    .Text {
+        grid-column: 1 / 7;
+        grid-row: 2 / 5;
+        display: grid;
+        align-items: center;
+    }
+
+    .Text p {
+        font-size: 4vw;
+        font-weight: 400;
+        line-height: 1.5;
+        
+    }
+
+    .About {
+        grid-column: 1 / 7;
+        grid-row: 6 / 8;
+    }
+
+    
+    .AboutButton {
+        height: 12vw;
+        width: 36vw;
+        border-radius: 6vw;
+    }
+
+
+    .AboutButton a {
+        font-size: 4vw;
+    }
 }
 
 @keyframes fadeUpAnime {

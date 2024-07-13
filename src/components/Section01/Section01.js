@@ -11,6 +11,11 @@ const Section01 = () => {
             <div className={styles.companyName}>
                 <h1>Story Web Solutions</h1>
             </div>
+            <div className={styles.objectArea}>
+                
+                <div className={styles.object01}></div>
+                <div className={styles.object02}></div>
+            </div>
             <div className={styles.backgroundImage}>
                 
                 
