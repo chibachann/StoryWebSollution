@@ -26,7 +26,6 @@ const Section01 = () => {
                     <a href="/">カタログを見る</a>
                 </div>
             </div>
-            <div className={styles.scroll}/>
         </section>
     );
 };
