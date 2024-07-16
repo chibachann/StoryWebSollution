@@ -137,7 +137,7 @@
 @media screen  and (max-width: 560px) {
     .section05 {
         width: 100%;
-        display: grid;
+        display: none;
         justify-items: center;
         grid-template-columns: var(--grid-template-columns-mobile);
         grid-auto-rows: var(--grid-auto-rows-mobile);
