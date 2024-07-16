@@ -136,4 +136,8 @@
         border-radius: 0.3vw;
         position: relative;
     }
+
+    .hamburgerArea {
+        display: none;
+    }
 }

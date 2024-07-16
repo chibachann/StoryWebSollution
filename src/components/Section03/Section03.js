@@ -6,7 +6,7 @@ import useIntersectionObserver from '../useIntersectionObserver';
 
 const Section03 = () => {
     const [containerRef, isContainerVisible] = useIntersectionObserver({
-        threshold: 0.5,
+        threshold: 0.3,
       });
 
     return ( 
@@ -29,21 +29,14 @@ const Section03 = () => {
             </div>
             <div className={styles.TextArea}>
                 <div className={styles.SubTitle}>
-                    <h2>About Us</h2>
+                    <h2>Service</h2>
                 </div>
                 <div className={styles.Title}>
-                    <h1>Investigate All Corners of<br/>The World With Us</h1>
+                    <h1>Webで実現する<br/>あなたのビジネスストーリー</h1>
                 </div>
                 <div className={styles.Text}>
-                    <p>Story Web Solutions is a web production company that 
-                        creates websites and web services that are easy to use 
-                        and easy to understand. 
-                        We are a web production company that 
-                        creates websites and web services 
-                        that are easy to use and easy to understand. 
-                        We are a web production company that 
-                        creates websites and web services 
-                        that are easy to use and easy to understand. 
+                    <p>Story Web Solutions は、使いやすく分かりやすいウェブサイトとウェブサービスを制作する会社です。<br/>
+                    私たちは、ウェブサイト制作、ウェブアプリケーション開発、UI/UXデザイン、コンテンツ戦略など、包括的なウェブソリューションを提供しています。最新技術とクリエイティブなアイデアを組み合わせ、お客様のビジネスニーズに合わせた効果的なウェブ体験を創造します。ユーザー中心のアプローチで、お客様のストーリーをウェブ上で魅力的に伝えるお手伝いをいたします。
                     </p>
                 </div>
             </div>
