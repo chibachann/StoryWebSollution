@@ -63,7 +63,7 @@
 
 @media screen  and (max-width: 560px) {
     .footer {
-        padding-top: 0;
+        padding-top: 5vw;
         grid-template-columns: var(--grid-template-columns-mobile);
         grid-auto-rows: var(--grid-auto-rows-mobile);
     }
