@@ -4,7 +4,7 @@
     --grid-auto-rows: 5vw;
 
     --grid-template-columns-mobile: repeat(6, 1fr);
-    --grid-auto-rows-mobile: calc(100svh / 6);
+    --grid-auto-rows-mobile: calc(100svh / 12);
 
     /* font-family */
     /* ゴシック体 */

@@ -149,7 +149,7 @@
 
     .title {
         grid-column: 1 / 7;
-        grid-row: 4 / 5;
+        grid-row: 7 / 9;
     }
 
     .title h1 {
@@ -160,7 +160,7 @@
 
     .companyName {
         grid-column: 1 / 7;
-        grid-row: 5 / 6;
+        grid-row: 9 / 11;
     }
 
     .companyName h1 {
@@ -171,12 +171,12 @@
 
     .contact {
         grid-column: 1 / 4;
-        grid-row: 6 / 7;
+        grid-row: 11/ 12;
     }
 
     .catalog {
         grid-column: 4 / 7;
-        grid-row: 6 / 7;
+        grid-row: 11 / 12;
     }
         
     .contactButton {
@@ -209,7 +209,7 @@
         
     .objectArea {
         grid-column: 2 / 6;
-        grid-row: 2 / 4;
+        grid-row: 3 / 6;
     }
 
     .object01 {

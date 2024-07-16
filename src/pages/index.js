@@ -14,7 +14,7 @@ const IndexPage = () => {
         <Section02 />
         <Section03 />
         <Section04 />
-        
+        <Section05 />
       </Layout>
     );
   };

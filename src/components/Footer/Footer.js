@@ -22,6 +22,9 @@ const Footer = () => {
                     <li><a href="/">Instagram</a></li>
                 </ul>
             </div>
+            <div className={styles.CopyRight}>
+                <p>2024 Story Web Solutions</p>
+            </div>
         </footer>
     );
 }
