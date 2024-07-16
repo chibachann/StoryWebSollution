@@ -9,7 +9,7 @@
 }
 
 .animate {
-    animation: fadeUpAnime 1s forwards;
+    animation: fadeUpAnime 0.5s forwards;
 }
 
 .ImageCardArea {
