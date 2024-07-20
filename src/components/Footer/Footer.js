@@ -19,7 +19,11 @@ const Footer = () => {
             <div className={styles.SNS}>
                 <h2>SNS</h2>
                 <ul>
-                    <li><a href="/">Instagram</a></li>
+                    <li><a 
+                        href="https://www.instagram.com/story_web_solutions?igsh=MWdzeWI0bXV3dndsdQ%3D%3D&utm_source=qr" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >Instagram</a></li>
                 </ul>
             </div>
             <div className={styles.CopyRight}>

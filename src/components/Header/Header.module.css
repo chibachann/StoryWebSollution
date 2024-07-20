@@ -77,7 +77,7 @@
     height: 3vw;
     width: 12vw;
     text-align: center;
-    display: none;
+    display: grid;
     place-items: center;
     background: var(--color-gradient);
     border-radius: 2vw;

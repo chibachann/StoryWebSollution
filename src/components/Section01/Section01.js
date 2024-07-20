@@ -18,12 +18,20 @@ const Section01 = () => {
             <div className={styles.buttonArea}>
                 <div className={styles.contact}>
                     <div className={styles.contactButton}>
-                        <a href="/">お問い合わせ</a>
+                    <a 
+                        href="https://www.instagram.com/story_web_solutions?igsh=MWdzeWI0bXV3dndsdQ%3D%3D&utm_source=qr" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >お問い合わせ</a>
                     </div>
                 </div>
                 <div className={styles.catalog}>
                     <div className={styles.catalogButton}>
-                        <a href="/">カタログを見る</a>
+                    <a 
+                        href="https://www.instagram.com/story_web_solutions?igsh=MWdzeWI0bXV3dndsdQ%3D%3D&utm_source=qr" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >カタログを見る</a>
                     </div>
                 </div>
             </div>

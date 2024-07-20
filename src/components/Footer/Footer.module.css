@@ -13,17 +13,18 @@
     grid-row: 1 / 2;
     display: grid;
     place-items: center;
+    padding-left: 30px;
 }
 
 .Logo h1 {
-    font-size: 2vw;
+    font-size: 3em;
     font-weight: 600;
 }
 
 .FooterMenu {
     grid-column: 8 / 10;
     grid-row: 1 / 6;
-    display: grid;
+    display: none;
     grid-template-rows: 5vw 10vw;
     
     grid-auto-flow: row;
@@ -45,13 +46,14 @@
     grid-column: 10 / 13;
     grid-row: 1 / 4;
     display: grid;
-    grid-template-rows: 5vw 10vw;
+    grid-template-rows: 40px 80px;
     grid-auto-flow: row;
 }
 
 .SNS h2 {
     display: grid;
     align-items: center;
+    font-size: 2rem;
 }
 
 .SNS ul {
@@ -59,6 +61,15 @@
     display: grid;
     grid-auto-flow: row;
     gap: 1vw;
+
+    a {
+        color: var(--color-primary);
+        font-size: 1.5rem;
+    }
+
+    a:hover {
+        color: var(--color-secondary);
+    }
 }
 
 .CopyRight {
