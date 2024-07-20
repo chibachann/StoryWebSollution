@@ -6,7 +6,7 @@ const Section01 = () => {
     return ( 
         <section className={styles.section01}>
             <div className={styles.imageArea}>
-                <img src="/images/top3.jpg" alt="Story Web Solutions" />
+                <img src="/images/top.jpg" alt="Story Web Solutions" />
             </div>
             <div className={styles.title}>
                 <h1>CAREATIVE DEGITAL</h1>
