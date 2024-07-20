@@ -110,8 +110,20 @@
         display: none;
     }
 
+    .contact {
+        grid-column: 5 / 7;
+        width: 95%;
+        justify-self: end;
+    }
+
     .contactButton {
-        display: none;
+        height: 30px;
+        width: 100px;
+        border-radius: 20px;
+
+        a {
+            font-size: 0.7rem;
+        }
     }
 
     .hamburgerArea {
