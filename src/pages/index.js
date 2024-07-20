@@ -28,6 +28,8 @@ export const Head = () => {
           siteMetadata {
             title
             description
+            siteUrl
+            image
           }
         }
       }
@@ -36,6 +38,9 @@ export const Head = () => {
       <>
        <title>{data.site.siteMetadata.title}</title>
        <meta name="description" content={data.site.siteMetadata.description} />
+       <meta property="og:type" content="website" />
+        <meta property="og:url" content={siteUrl} />
+       <meta property="og:image" content={`${siteUrl}${image}`} />
       </>
     );
   }
