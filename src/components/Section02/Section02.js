@@ -29,11 +29,6 @@ const Section02 = () => {
                     </p>
                 </div>
             </div>
-            <div className={styles.About}>
-                <div className={styles.AboutButton}>
-                    <a href="/">詳しく見る</a>
-                </div>
-            </div>
             
         </section>
     );
