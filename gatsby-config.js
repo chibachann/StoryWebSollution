@@ -5,7 +5,7 @@ module.exports = {
         siteUrl: "https://www.storyweb-solutions.com",
         author: "chiba",
         lang: "ja",
-        image: "/images/top.jpg",
+        image: "/images/about.jpg",
     },
     plugins: [
         `gatsby-plugin-sitemap`,
