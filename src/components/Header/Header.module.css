@@ -82,13 +82,14 @@
     background: var(--color-gradient);
     border-radius: 2vw;
     cursor: pointer;
+
+    a {
+        font-size: 1.2vw;
+        font-weight: 500;
+    
+    }
 }
 
-
-.contactButton a {
-    font-size: 1.2vw;
-    font-weight: 500;
-}
 
 .hamburgerArea {
     display: none;
