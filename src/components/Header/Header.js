@@ -28,13 +28,7 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className={styles.hamburgerArea}>
-                <div className={styles.hamburger}>
-                    <div className={styles.line}></div>
-                    <div className={styles.line}></div>
-                    <div className={styles.line}></div>
-                </div>
-            </div>
+           
                 
         </header>
     );

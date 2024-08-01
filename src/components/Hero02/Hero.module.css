@@ -1,0 +1,66 @@
+.Section {
+    width: 100%;
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: var(--grid-columns-sp);
+    grid-auto-rows: var(--grid-rows-sp);
+    place-items: center;
+}
+
+.heroImage {
+    grid-column: 1 /-1;
+    grid-row: 1 / 11;
+    height: 100%;
+    width: 100%;
+}
+
+
+.heroTextContainer {
+    grid-column: 1 / -1;
+    grid-row: 8 / 10;
+    width: 90%;
+}
+
+.heroTitle {
+    font-size: 6.5vw;
+    color: white;
+    font-family: "noto serif jp", serif;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 0.8);
+}
+
+@media (min-width:561px) {
+    .Grid {
+        grid-template-columns: var(--grid-columns-tb);
+        grid-auto-rows: var(--grid-rows-tb);
+    }
+    .heroTitle {
+        font-size: 6vw;
+    }
+}
+
+@media (min-width:1081px) {
+    .Grid {
+        grid-template-columns: var(--grid-columns-pc);
+        grid-auto-rows: var(--grid-rows-pc);
+    }
+    
+
+    .heroImage {
+        grid-row: 1 / 11;
+    }
+
+    .heroTextContainer{
+        grid-row: 6 / 8;
+    }
+    .heroTitle {
+        font-size: 4vw;
+    }
+
+    
+}
+
+
+

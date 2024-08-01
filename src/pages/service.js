@@ -1,17 +1,13 @@
 import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
-import Hero from "../components/Hero02/Hero";
-import Concept from "../components/Concept01/Concept";
 import Point from "../components/Point/Point";
 import FlowOnImage from '../components/FlowOnImage/FlowOnImage';
 
 
-const IndexPage = () => {
+const ServicePage = () => {
     return (
       <Layout>
-        <Hero/>
-        <Concept/>
         <FlowOnImage
           imageSrc="/images/story/PointBanner.jpg"
           Title="サービス"
@@ -22,7 +18,7 @@ const IndexPage = () => {
     );
   };
 
-export default IndexPage;
+export default ServicePage;
 
 export const Head = () => {
     const data = useStaticQuery(graphql`
