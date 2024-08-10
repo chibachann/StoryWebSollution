@@ -6,26 +6,21 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.logo}>
-                <Link to='/'><h1>Story Web Solutions</h1></Link>
+                <Link to='/'>
+                    <img src="/images/logo.png" alt="Story Web Solutions" />
+                </Link>
             </div>
-            <nav className={styles.nav}>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/service">Service</Link></li>
-                    <li><Link to="/catalog">Catalog</Link></li>
-                </ul>
-            </nav>
+            
             <div className={styles.contact}>
-                <div className={styles.contactButton}>
-                    <a 
-                        href="https://www.instagram.com/story_web_solutions?igsh=MWdzeWI0bXV3dndsdQ%3D%3D&utm_source=qr" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                    >
-                        お問い合わせ
-                    </a>
-                </div>
+                
+                <a 
+                    href="https://www.instagram.com/story_web_solutions?igsh=MWdzeWI0bXV3dndsdQ%3D%3D&utm_source=qr" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    お問い合わせ
+                </a>
+                
             </div>
 
            

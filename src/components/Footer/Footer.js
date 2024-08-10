@@ -16,7 +16,7 @@ const Footer = () => {
                         href="https://www.instagram.com/story_web_solutions?igsh=MWdzeWI0bXV3dndsdQ%3D%3D&utm_source=qr" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className={styles.Parent}>お問合せ</a></li>
+                        className={styles.Parent}>お問い合わせ</a></li>
                     </ul>
                 </div>
             </div>

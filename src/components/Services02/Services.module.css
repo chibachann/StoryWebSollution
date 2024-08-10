@@ -1,0 +1,180 @@
+.Section {
+    padding: 10vw 0 20vw 0;
+    width: 100%;
+    background-color: #222;
+    color: #ddd;
+    font-family: var(--font-family-gothic);
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: var(--grid-columns-sp);
+    grid-auto-rows: var(--grid-rows-sp);
+    place-items: center;
+}
+
+.Title {
+    grid-column: 1/-1;
+    grid-row: span 2;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-family-mincho);
+}
+.Title h1 {
+    font-size: 10vw;
+    font-weight: 700;
+}
+
+.Text {
+    grid-column: 1/-1;
+    width: 85%;
+    grid-row: span 5;
+    align-self: start;
+}
+
+.Text p {
+    font-size: 3.7vw;
+    line-height: 1.7;
+}
+.Text span {
+    font-weight: 700;
+    background: linear-gradient(transparent 70%, rgba(255, 179, 0, 0.55) 30%);
+}
+
+.Services {
+    grid-column: 1/-1;
+    grid-row: span 25;
+    row-gap: 5vw;
+    height: 100%;
+    display: grid;
+    grid-auto-rows: 5fr;
+}
+
+.Service {
+    border: 1px solid #ddd;
+    justify-self: center;
+    width: 85%;
+    display: grid;
+    grid-template-rows: 2fr 30vw 1fr 3fr;
+}
+.Service img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.Service h2 {
+    display: grid;
+    place-items: center;
+    font-size: 5vw;
+}
+.Service h3 {
+    place-self: center;
+    width: 85%;
+    font-size: 4.5vw;
+}
+.Service p {
+    justify-self: center;
+    width: 85%;
+    font-size: 3.7vw;
+    line-height: 1.5;
+}
+
+
+@media (min-width: 561px) {
+    .Section {
+        padding: 5vw 0;
+    }
+   
+    .Grid {
+        grid-template-columns: var(--grid-columns-tb);
+        grid-auto-rows: var(--grid-rows-tb);
+    }
+
+    .Title {
+        grid-row: span 3;
+    }
+
+    .Title h1 {
+        font-size: 6.5vw;
+    }
+
+    .Text {
+        grid-column: 1/-1;
+        width: 60%;
+        grid-row: span 4;
+    }
+
+    .Text p {
+        font-size: 1.5vw;
+    }
+
+    .Services {
+        grid-column: 1/-1;
+        grid-row: span 15;
+        height: 100%;
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .Service {  
+        justify-self: center;
+        width: 85%;
+        display: grid;
+        grid-template-rows: 2fr 10vw 1fr 3fr;
+    }
+    .Service img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .Service h2 {
+        display: grid;
+        place-items: center;
+        font-size: 2.5vw;
+    }
+    .Service h3 {
+        place-self: center;
+        width: 85%;
+        font-size: 2vw;
+    }
+    .Service p {
+        justify-self: center;
+        width: 85%;
+        font-size: 1.5vw;
+        line-height: 1.5;
+    }
+}
+
+@media (min-width: 1081px) {
+    .Grid {
+        grid-template-columns: var(--grid-columns-pc);
+        grid-auto-rows: var(--grid-rows-pc);
+    }
+
+    .Title h1 {
+        font-size: 4vw;
+    }
+    .Text p {
+        font-size: 1.3vw;
+    }
+    .Services {
+        width: 75%;
+        grid-row: span 12;
+        row-gap: 2vw;
+        column-gap: 2vw;
+    }
+    .Service {
+        width: 100%;
+    }
+    .Service h2 {
+        font-size: 1.7vw;
+    }
+    .Service h3 {
+        font-size: 1.5vw;
+    }
+    .Service p {
+        font-size: 1.2vw;
+    }
+}

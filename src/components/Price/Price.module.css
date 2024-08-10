@@ -1,0 +1,87 @@
+.Section {
+    padding: 10vw 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    color: #333;
+    font-family: var(--font-family-gothic);
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: var(--grid-columns-sp);
+    grid-auto-rows: var(--grid-rows-sp);
+    place-items: center;
+}
+
+.Title {
+    grid-column: 1/-1;
+    grid-row: span 2;
+    height: 80%;
+    width: 85%;
+    text-align: center;
+}
+.Title h1 {
+    font-size: 8vw;
+    font-weight: 700;
+    color: #0087db;
+}
+.Title h2 {
+    font-size: 4.5vw;
+    font-weight: 600;
+    color: #333;
+}
+
+.Text {
+    grid-column: 1/-1;
+    width: 85%;
+    grid-row: span 6;
+    font-size: 3.7vw;
+    line-height: 1.7;
+    color: #333;
+}
+
+@media (min-width:561px) {
+    .Grid {
+        grid-template-columns: var(--grid-columns-tb);
+        grid-auto-rows: var(--grid-rows-tb);
+    }
+
+    .Title{
+        grid-row: span 3;
+    }
+    .Title h1 {
+        font-size: 6vw;
+    }
+    .Title h2 {
+        font-size: 3.5vw;
+    }
+    .Text {
+        width: 70%;
+        font-size: 1.5vw;
+        grid-row: span 5;
+    }
+}
+
+@media (min-width:1081px) {
+    .Section {
+        padding: 5vw 0;
+    }
+    .Grid {
+        grid-template-columns: var(--grid-columns-pc);
+        grid-auto-rows: var(--grid-rows-pc);
+    }
+    .Title {
+        grid-row: span 2;
+    }
+    .Title h1 {
+        font-size: 4vw;
+    }
+    .Title h2 {
+        font-size: 2vw;
+    }
+    .Text {
+        width: 60%;
+        font-size: 1.3vw;
+    }
+}

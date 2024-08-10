@@ -1,19 +1,15 @@
 import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
-import Point from "../components/Point/Point";
-import FlowOnImage from '../components/FlowOnImage/FlowOnImage';
+import Services01 from "../components/Services01/Services";
+import Services02 from "../components/Services02/Services";
 
 
 const ServicePage = () => {
     return (
       <Layout>
-        <FlowOnImage
-          imageSrc="/images/story/PointBanner.jpg"
-          Title="サービス"
-          subTitle="SERVICE"
-          />
-        <Point/>
+        <Services02 />
+        <Services01 />
       </Layout>
     );
   };

@@ -1,0 +1,152 @@
+.Section {
+    padding: 10vw 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    color: #333;
+    font-family: var(--font-family-gothic);
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: var(--grid-columns-sp);
+    grid-auto-rows: var(--grid-rows-sp);
+    place-items: center;
+}
+
+.Title {
+    grid-column: 1/-1;
+    grid-row: span 2;
+    height: 80%;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 2fr;
+    align-items: center;
+}
+.bar{
+    grid-column: span 1;
+    grid-row: span 1;
+    border-bottom: 1px solid rgb(41, 158, 187);
+    width: 70%;
+}
+.Title h3 {
+    grid-column: span 1;
+    grid-row: span 1;
+    font-weight: 500;
+    font-size: 4vw;
+}
+.Title h2 {
+    grid-column: span 2;
+    font-size: 5vw;
+    font-weight: 600;
+    color: #333;
+}
+.marker {
+    background: linear-gradient(transparent 70%, rgba(0, 132, 255, 0.55) 30%);
+}
+
+.Text {
+    grid-column: 1/-1;
+    width: 85%;
+    grid-row: span 3;
+    font-size: 3.7vw;
+    line-height: 1.7;
+    color: #333;
+}
+.Text span {
+    font-weight: 700;
+    background: linear-gradient(transparent 70%, rgba(0, 132, 255, 0.55) 30%);
+}
+
+.TextCards {
+    align-self: start;
+    grid-column: 1/-1;
+    grid-row: span 6;
+    height: 100%;
+    width: 85%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 2vw;
+}
+.TextCards p{
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: grid;
+    place-items: center;
+    font-size: 4vw;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+@media (min-width:561px) {
+    .Section {
+        padding: 5vw 0;
+    }
+
+    .Grid {
+        grid-template-columns: var(--grid-columns-tb);
+        grid-auto-rows: var(--grid-rows-tb);
+    }
+    .Title {
+        grid-column: 1/7;
+        grid-row: span 4;
+        align-items: center;
+        align-self: start;
+        justify-self: end;
+    }
+    .Title h3 {
+        font-size: 1.5vw;
+    }
+    .Title h2 {
+        font-size: 2.7vw;
+    }
+    .Text {
+        grid-column: 7/-1;
+        grid-row: span 4;
+        font-size: 1.5vw;
+    }
+    .TextCards {
+        grid-column: 1/-1;
+        grid-row: span 6;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .TextCards p{
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        font-size: 1.7vw;
+    }
+}
+
+@media (min-width:1081px) {
+    .Section {
+        padding: 5vw 0 10vw 0;
+    }
+    .Grid {
+        grid-template-columns: var(--grid-columns-pc);
+        grid-auto-rows: var(--grid-rows-pc);
+    }
+    .Title {
+        width: 70%;
+    }
+    .Title h3 {
+        font-size: 1.5vw;
+    }
+    .Title h2 {
+        font-size: 2.4vw;
+    }
+    .Text {
+        grid-column: 7/12;
+        justify-self: center;
+        width: 80%;
+        font-size: 1.2vw;
+    }
+    .TextCards {
+        width: 75%;
+        column-gap: 2vw;
+    }
+    .TextCards p{
+        font-size: 1.5vw;
+    }
+}

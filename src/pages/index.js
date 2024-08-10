@@ -2,22 +2,29 @@ import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Hero from "../components/Hero02/Hero";
-import Concept from "../components/Concept01/Concept";
-import Point from "../components/Point/Point";
-import FlowOnImage from '../components/FlowOnImage/FlowOnImage';
+
+
+import About from "../components/About/About";
+import Services from "../components/Services01/Services";
+import Explain01 from "../components/Explain01/Explain";
+import Sample from "../components/Sample/Sample";
+import Services02 from "../components/Services02/Services";
+import Price from "../components/Price/Price";
+import Explain02 from "../components/Explain02/Explain";
 
 
 const IndexPage = () => {
     return (
       <Layout>
         <Hero/>
-        <Concept/>
-        <FlowOnImage
-          imageSrc="/images/story/PointBanner.jpg"
-          Title="サービス"
-          subTitle="SERVICE"
-          />
-        <Point/>
+        <About />
+        <Services />
+        <Explain01 />
+        <Sample />
+        <Services02 />
+        <Price />
+        <Explain02 />
+        
       </Layout>
     );
   };
