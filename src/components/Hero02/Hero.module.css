@@ -37,7 +37,7 @@
         grid-auto-rows: var(--grid-rows-tb);
     }
     .heroTitle {
-        font-size: 6vw;
+        font-size: 4vw;
     }
 }
 
@@ -52,9 +52,6 @@
         grid-row: 1 / 11;
     }
 
-    .heroTextContainer{
-        grid-row: 6 / 8;
-    }
     .heroTitle {
         font-size: 4vw;
     }

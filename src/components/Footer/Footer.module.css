@@ -16,12 +16,13 @@
     grid-row: 1/3;
     width: 85%;
     height: 80%;
-    color: white;
 }
-.FooterLogo > h1 {
-    font-size: 6vw;
-    line-height: 1;
+.FooterLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
+
 
 .FooterNav {
     height: 100%;
@@ -72,14 +73,10 @@
     }
     
     .FooterLogo {
-        width: 100%;
-        grid-column: 1/-1;
+        grid-column: 1/4;
         grid-row: 1/3;
     }
-    .FooterLogo > h1 {
-        font-size: 3vw;
-        line-height: 1;
-    }
+    
 
     .FooterNav {
         height: 100%;

@@ -14,8 +14,10 @@ const Hero = () => {
                 </div>
                 
                 <div className={styles.heroTextContainer}>
-                    <h1 className={styles.heroTitle}>飲食店の成功を第一に考える<br/>
-                    ホームページ制作会社<br/>Story Web Sollutions</h1>
+                    <h1 className={styles.heroTitle}>
+                        飲食店の成功を第一に考える<br/>
+                        ホームページ制作会社
+                    </h1>
                 </div>
             </div>
         </section>

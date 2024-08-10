@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className={styles.footer}>
             <div className={styles.Grid}>
                 <div className={styles.FooterLogo}>
-                    <h1>SToRy Web Sollutions</h1>
+                    <img src="/images/logo.png" alt="Story Web Solutions" />
                 </div>
                 <div className={styles.FooterNav}>
                     <ul>
