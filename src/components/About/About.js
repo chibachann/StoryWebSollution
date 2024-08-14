@@ -13,7 +13,7 @@ const About = () => {
                 <img src="/images/about/01.jpg" alt="About" className={styles.Image}/>
                 <div className={styles.Text}>
                     <p>
-                    合同会社SToRy Web Sollutionは、
+                    合同会社SToRy Web Solutionは、
                     <span>飲食店様の集客に特化したWEB制作・運用サービス</span>
                     をご提供しております。
                     新規のお客様獲得はもちろん、リピーター作りまで、
