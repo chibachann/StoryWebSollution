@@ -1,0 +1,133 @@
+.Section {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    top: 0px;
+    z-index: 300;
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 60vh;
+    width: 100%;
+    position: relative;
+}
+
+.Background {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+.Background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.Title {
+    place-self: center;
+    font-family: var(--font-family-gothic);
+    grid-column: 1/-1;
+    grid-row: 1/7;
+    width: 90%;
+    height: 90%;
+    color: white;
+    z-index: 2;
+    display: grid;
+    justify-items: start;
+    grid-auto-rows: min-content;
+    
+}
+.Title h1 {
+    font-size: 3rem;
+    line-height: 1;
+    animation-name:slideTextX50;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+.Title h2 {
+    margin: 3rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--font-family-gothic);
+    animation: slideTextX30 1s 0.5s forwards;
+    opacity: 0;
+}
+.Title h2 br {
+    display: none;
+}
+
+
+@keyframes slideTextX50 {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTextX30 {
+    from {
+        transform: translateX(-30%); 
+        opacity: 0;
+    }
+  
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+
+@media (min-width: 581px) {
+    .Title {
+        grid-row: 2/5;
+    }
+    .Title h1 {
+        font-size: min(5rem, 8vw);
+    }
+    .Title h2 {
+        font-size: min(1.5rem, 3vw);
+    }
+    .Title br {
+        display: block;
+    }
+    .Title p {
+        width: 50%;
+        margin-top: 0em;
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+}
+
+@media (min-width: 1081px) {
+    .Grid {
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .Title {
+        grid-column: 1/-1;
+        grid-row: 2/5;
+    }
+    .Title h1 {
+        font-size: 6rem;
+    }
+    .Title h2 {
+        font-size: 1.5rem;
+    }
+    .Title p {
+        width: 50%;
+        margin-top: 0rem;
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+}

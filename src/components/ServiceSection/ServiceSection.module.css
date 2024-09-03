@@ -1,0 +1,234 @@
+.Section {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    z-index: 200;
+    background-color:#222;
+    color: white;
+    font-family: var(--font-family-gothic);
+    display: grid;
+    place-items: center;
+}
+
+.Section p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.Grid {
+    margin: 50px 0;
+    width: 85%;
+    height: auto;
+    display: grid;
+    z-index: 200;
+}
+.Title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+.Container {
+    margin: 30px 0;
+    display: grid;
+    width: 85%;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+.Card {
+    width: 100%;
+    height: 450px;
+    border-radius: 24px;
+    background-color: #444;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 200px min-content 1fr;
+}
+
+.Card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px 24px 0 0;
+}
+.Card h2 {
+    margin: 5vw 0;
+    width: 85%;
+    display: grid;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.Card p {
+    margin: 0;
+    width: 85%;
+    height: 80%;
+    align-self: start;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.SubTitle {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.FlowContainer {
+    margin: 30px 0;
+    display: grid;
+    width: 100%;
+    row-gap: 20px;
+    grid-auto-rows: 270px;
+}
+
+.FlowCard {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.FlowCard img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 24px;
+    background-color: aliceblue;
+    
+}
+
+.FlowText {
+    display: grid;
+    width: 90%;
+    height: 80%;
+}
+
+.FlowText h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: grid;
+    align-items: center;
+}
+.FlowText p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+@media (min-width: 601px) {
+    .Section {
+        position: relative;
+    }
+    .Grid {
+        height: auto;
+        width: 80%;
+    }
+    .Title {
+        font-size: 4rem;
+    }
+    .Container {
+        width: 80%;
+        margin: 10px 0;
+        
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: min-content;
+    }
+    .Card {
+        height: auto;
+        grid-template-rows: 230px min-content min-content;
+    }
+    .Card h2 {
+        font-size: 1.3rem;
+        margin: 20px 0;
+    }
+    .Card p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .SubTitle br{
+        display: none;
+    }
+    .FlowContainer {
+        row-gap: 30px;
+        grid-auto-rows: 200px;
+    }
+    .FlowCard {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .FlowText {
+        width: 80%;
+        height: 80%;
+    }
+    .FlowCard img {
+        height: 200px;
+    }
+    .FlowText h3 {
+        font-size: 1.3rem;
+    }
+    .FlowText p {
+        font-size: 1rem;
+    }
+    
+}
+
+
+@media (min-width: 1081px) {
+    .Section {
+        position: relative;
+    }
+    .Grid {
+        height: auto;
+        width: min(90%, 1180px);
+    }
+    .Title {
+        font-size: 4rem;
+    }
+    .Container {
+        width: min(90%, 1180px);
+        margin: 10px 0;
+        
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: min-content;
+    }
+    .Card {
+        height: auto;
+        grid-template-rows: 230px min-content min-content;
+    }
+    .Card h2 {
+        font-size: 1.3rem;
+    }
+    .Card p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .SubTitle br{
+        display: none;
+    }
+    .FlowContainer {
+        row-gap: 30px;
+        grid-auto-rows: 200px;
+    }
+    .FlowCard {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .FlowText {
+        width: 80%;
+        height: 80%;
+    }
+    .FlowCard img {
+        height: 200px;
+    }
+    .FlowText h3 {
+        font-size: 1.3rem;
+    }
+    .FlowText p {
+        font-size: 1rem;
+    }
+    
+}
