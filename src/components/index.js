@@ -22,21 +22,52 @@ const IndexPage = () => {
 export default IndexPage;
 
 export const Head = () => {
-    const data = useStaticQuery(graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-          }
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          siteUrl
+          image
         }
       }
-    `)
-    return (
-      <>
-       <title>{data.site.siteMetadata.title}</title>
-       <meta name="description" content={data.site.siteMetadata.description} />
-      </>
-    );
-  }
-  
+    }
+  `)
+
+  const {
+    title,
+    description,
+    siteUrl,
+    image
+  } = data.site.siteMetadata
+
+  const metaTitle = pageTitle ? `${pageTitle} | ${title}` : title
+  const metaDescription = pageDescription || description
+  const metaImage = pageImage ? `${siteUrl}${pageImage}` : `${siteUrl}${image}`
+
+  return (
+    <>
+      <title>{metaTitle}</title>
+      <meta name="description" content={metaDescription} />
+      <meta name="image" content={metaImage} />
+
+      {/* OGPタグ */}
+      <meta property="og:title" content={metaTitle} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:image" content={metaImage} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={siteUrl} />
+      <meta property="og:site_name" content={title} />
+
+      {/* Twitter Card タグ */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={metaTitle} />
+      <meta name="twitter:description" content={metaDescription} />
+      <meta name="twitter:image" content={metaImage} />
+      
+      {/* その他の重要なメタタグ */}
+      <link rel="canonical" href={siteUrl} />
+    </>
+  );
+}
