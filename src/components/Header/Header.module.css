@@ -4,17 +4,15 @@
     height: 10vw;
     position: fixed;
     display: grid;
-    grid-template-columns: 330px auto 100px;
-    grid-template-columns: 40vw auto 15vw;
     grid-template-rows: 1fr;
     z-index: 1000;
 }
 
 .Logo {
+    padding-left: 10px;
+    padding-top: 10px;
     height: 100%;
-    width: 100%;
-}
-.Logo img {
+    width: 35vw;
     object-fit: contain;
 }
 
@@ -41,10 +39,9 @@
 @media (min-width: 601px) {
     .Header {
         height: 80px;
-        grid-template-columns: 280px auto 80px;
     }
     .Logo {
-        height: 80px;
+        width: 150px;
     }
 
     .Menu {
@@ -58,10 +55,13 @@
 @media (min-width: 1081px) {
     .Header {
         height: 100px;
-        grid-template-columns: 330px auto 100px;
+        grid-template-columns: auto auto 100px;
     }
     .Logo {
-        height: 100px;
+        display: grid;
+        width: 150px;
+        height: 60px;
+        object-fit: contain;
     }
 
     .Menu {

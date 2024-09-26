@@ -7,14 +7,20 @@ import ServiceSection from '../components/ServiceSection/ServiceSection';
 import CostSection from '../components/CostSection/CostSection';
 import InviteSection from '../components/InviteSection/InviteSection';
 
+import LoadingScreen from '../components/LoadingScreen/LoadingScreen';
+
+import Test from '../components/test/test';
+
 const IndexPage = () => {
     return (
       <Layout>
+        <LoadingScreen />
         <Demo01 />
         <AboutSection />
         <ServiceSection />
         <CostSection />
         <InviteSection />
+        <Test />
       </Layout>
     );
   };
