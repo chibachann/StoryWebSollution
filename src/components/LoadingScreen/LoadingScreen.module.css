@@ -29,7 +29,7 @@
 .loadingImage {
   grid-column: 1/-1;
   grid-row: 1/-1;
-  width: min(40vw, 300px);
+  width: min(50vw, 300px);
   height: auto;
   object-fit: contain;
 }

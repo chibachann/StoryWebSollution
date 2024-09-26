@@ -9,7 +9,6 @@ import InviteSection from '../components/InviteSection/InviteSection';
 
 import LoadingScreen from '../components/LoadingScreen/LoadingScreen';
 
-import Test from '../components/test/test';
 
 const IndexPage = () => {
     return (

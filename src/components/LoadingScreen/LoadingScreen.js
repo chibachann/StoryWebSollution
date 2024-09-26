@@ -16,8 +16,9 @@ const LoadingScreen = () => {
     <div className={`${styles.loadingScreen} ${!isLoading ? styles.loaded : ''}`}>
       <img src="background/OxfordBlue.png" alt="OxfordBlue" className={styles.loadingBackground} />
       <div className={styles.loadingContent}>
-        <img src="logo/loading_title_1.png" alt="Loading_1" className={styles.loadingImage} />
         <img src="logo/loading_title_2.png" alt="Loading_2" className={styles.loadingImage} />
+        <img src="logo/loading_title_1.png" alt="Loading_1" className={styles.loadingImage} />
+        
       </div>
     </div>
   )
