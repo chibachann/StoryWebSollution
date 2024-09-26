@@ -20,7 +20,6 @@ const IndexPage = () => {
         <ServiceSection />
         <CostSection />
         <InviteSection />
-        <Test />
       </Layout>
     );
   };
